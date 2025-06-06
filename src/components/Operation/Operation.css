@@ -98,7 +98,7 @@
 .operationCardText {
 	color: rgba(255, 255, 255, 0.8);
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 100%; /* 18px */
 	text-align: start;
@@ -141,8 +141,39 @@
 
 .operationBtn {
 	transition: transform 0.3s ease;
+	transform: rotate(180deg);
 }
 
 .operationBtn.rotated {
-	transform: rotate(180deg);
+	transform: rotate(0deg);
+}
+
+@media (max-width: 900px) {
+	.operationTitle {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.operationTitle {
+		font-size: 20px;
+	}
+
+	.operationBtn {
+		width: 18px;
+		height: 12px;
+	}
+	.operationCardText {
+		font-size: 15px;
+	}
+
+	.operationCardTitle {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 500px) {
+	.Operation {
+		width: auto;
+	}
 }

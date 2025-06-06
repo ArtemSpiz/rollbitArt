@@ -73,3 +73,52 @@
 .missionsCard {
 	cursor: pointer;
 }
+
+@media (max-width: 1050px) {
+	.Missions {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.missionsCard:nth-child(3) {
+		position: relative;
+		right: -50%;
+	}
+}
+
+@media (max-width: 1050px) {
+	.missionsCardSubtitle {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.missionsCardTitle {
+		font-size: 16px;
+	}
+	.missionsCardSubtitle {
+		font-size: 18px;
+	}
+
+	.missionsCard {
+		gap: 8px;
+	}
+}
+
+@media (max-width: 500px) {
+	.Missions {
+		display: flex;
+		flex-direction: column;
+		align-self: stretch;
+	}
+
+	.missionsCard {
+		width: 100%;
+	}
+
+	.missionsCard:nth-child(3) {
+		position: relative;
+
+		right: 0%;
+	}
+}

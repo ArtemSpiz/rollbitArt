@@ -4,7 +4,31 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 48px 260px;
-	justify-content: center;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 	font-family: 'Space Grotesk';
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 1300px) {
+	body {
+		padding: 40px 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 0px;
+		background: #222339;
+	}
 }

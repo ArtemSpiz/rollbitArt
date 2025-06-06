@@ -42,3 +42,58 @@
 	width: 24px;
 	height: 20px;
 }
+
+@media (max-width: 1200px) {
+	.Header {
+		background-size: inherit;
+		padding: 16px;
+		width: 525px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header-title {
+		font-size: 18px;
+	}
+
+	.diamonds {
+		font-size: 16px;
+	}
+
+	.header-diamond {
+		width: 22px;
+		height: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+	.Header {
+		background-size: 100% 100%;
+		width: 350px;
+	}
+
+	.header-title {
+		font-size: 0.75rem;
+	}
+
+	.diamonds {
+		font-size: 0.75rem;
+		padding: 4px 10px;
+	}
+
+	.header-diamond {
+		width: 18px;
+		height: 14px;
+	}
+
+	.logo {
+		height: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.Header {
+		width: 300px;
+		padding: 10px;
+	}
+}

@@ -3,6 +3,7 @@
 	align-items: center;
 	gap: 24px;
 	align-self: stretch;
+	justify-content: center;
 }
 
 .statusCard {
@@ -15,10 +16,12 @@
 	flex: 1 0 0;
 	align-self: stretch;
 	background-image: url('../../assets/StatusAnalizBg.png');
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	width: 424px;
+	background-position: center;
+	width: 100%;
 	height: 208px;
+	box-sizing: border-box;
 }
 
 .diamondCard {
@@ -26,6 +29,9 @@
 	align-items: normal;
 	position: relative;
 	background-image: url('../../assets/StatusAnalizBgDiamond.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .statusTextTop {
@@ -109,4 +115,65 @@
 .statusBtn:hover {
 	background: #cb1fea;
 	transform: translateY(-2px);
+}
+
+@media (max-width: 1050px) {
+	.Status {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.statusCard {
+		flex: auto;
+		width: 100%;
+		max-width: 500px;
+		align-self: center;
+	}
+
+	.statusDiamond {
+		width: 150px;
+		height: 140px;
+	}
+
+	.statusCardTitle {
+		font-size: 30px;
+	}
+
+	.statusCardSubtitle {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.statusTextDown,
+	.statusTextTop {
+		font-size: 16px;
+		padding-bottom: 0;
+	}
+
+	.statusCardImg {
+		width: 22px;
+	}
+
+	.statusDiamond {
+		width: 130px;
+		height: 120px;
+	}
+
+	.statusCardTitle {
+		font-size: 28px;
+	}
+
+	.statusCardSubtitle {
+		font-size: 20px;
+	}
+
+	.statusCard {
+		gap: 15px;
+	}
+
+	.statusBtn {
+		padding: 8px 35px;
+	}
 }

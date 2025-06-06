@@ -1,7 +1,50 @@
 import './Missions.css'
-import missionsData from '../../data/missionsData'
+import { useEffect, useState } from 'react'
+
+function getTimeRemaining(endTime) {
+	const total = Date.parse(endTime) - Date.now()
+
+	if (total <= 0) return '00:00:00'
+
+	const seconds = Math.floor((total / 1000) % 60)
+	const minutes = Math.floor((total / 1000 / 60) % 60)
+	const hours = Math.floor((total / (1000 * 60 * 60)) % 24)
+
+	return [
+		String(hours).padStart(2, '0'),
+		String(minutes).padStart(2, '0'),
+		String(seconds).padStart(2, '0'),
+	].join(':')
+}
+
+const deadline = '2025-06-08T12:00:00' //тут вводити
 
 function Missions() {
+	const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining(deadline))
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setTimeRemaining(getTimeRemaining(deadline))
+		}, 1000)
+
+		return () => clearInterval(interval)
+	}, [])
+
+	const missionsData = [
+		{
+			title: 'Completed missions',
+			subtitle: '04',
+		},
+		{
+			title: 'Current Mission',
+			subtitle: 'Phase Vanguard',
+		},
+		{
+			title: 'Time Active',
+			subtitle: timeRemaining,
+		},
+	]
+
 	return (
 		<div className='Missions'>
 			{missionsData.map((mission, index) => (

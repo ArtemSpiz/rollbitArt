@@ -78,3 +78,54 @@
 	width: 24px;
 	height: 24px;
 }
+
+@media (max-width: 1200px) {
+	.Footer {
+		gap: 48px;
+	}
+}
+
+@media (max-width: 950px) {
+	.Footer {
+		gap: 40px;
+	}
+}
+
+@media (max-width: 900px) {
+	.footerBtn {
+		font-size: 18px;
+		padding: 8px 35px;
+	}
+}
+
+@media (max-width: 768px) {
+	.Footer {
+		gap: 32px;
+		background: none;
+	}
+
+	.footerSecureTitle {
+		font-size: 16px;
+	}
+
+	.footerLinksTelegram {
+		padding: 8px;
+		height: 30px;
+		font-size: 16px;
+	}
+
+	.tgImg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.footerLinks {
+		gap: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+	.Footer {
+		gap: 24px;
+	}
+}

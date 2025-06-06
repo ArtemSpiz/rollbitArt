@@ -114,3 +114,55 @@
 	stroke: #e658ff;
 	filter: drop-shadow(0 0 8px #e658ffbb);
 }
+
+@media (max-width: 1050px) {
+	.analyzingImg {
+		height: 245px;
+	}
+}
+
+@media (max-width: 900px) {
+	.analyzingImg {
+		height: 200px;
+	}
+	.AnalyzingText {
+		font-size: 22px;
+	}
+
+	.Analyzing {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.analyzingImg {
+		height: 150px;
+	}
+
+	.AnalyzingArrowLeft svg,
+	.AnalyzingArrowRight svg {
+		width: 35px;
+	}
+
+	.AnalyzingText {
+		font-size: 20px;
+	}
+
+	.Analyzing {
+		gap: 25px;
+	}
+}
+@media (max-width: 500px) {
+	.AnalyzingArrowLeft svg,
+	.AnalyzingArrowRight svg {
+		width: 25px;
+	}
+
+	.analyzingImg {
+		height: 120px;
+	}
+
+	.Analyzing {
+		gap: 15px;
+	}
+}
