@@ -1,0 +1,80 @@
+.Footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 56px;
+}
+
+.footerBtn {
+	display: flex;
+	height: 56px;
+	padding: 8px 48px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background: #e658ff;
+	color: #fff;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	border: none;
+	line-height: 24.64px; /* 123.2% */
+	cursor: pointer;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+.footerBtn:hover {
+	background: #cb1fea;
+	transform: translateY(-2px);
+}
+
+.footerSecure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.footerSecureTitle {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 100%; /* 18px */
+}
+
+.footerLinks {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.footerLinksTelegram {
+	cursor: pointer;
+	display: flex;
+	height: 40px;
+	padding: 8px 16px 8px 8px;
+	align-items: center;
+	gap: 8px;
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	color: #fff;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 31.36px; /* 174.222% */
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footerLinksTelegram:hover {
+	transform: scaleY(0.98);
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tgImg {
+	width: 24px;
+	height: 24px;
+}

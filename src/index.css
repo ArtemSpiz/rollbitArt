@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+	background-image: url('./assets/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 48px 260px;
+	justify-content: center;
+	display: flex;
+	font-family: 'Space Grotesk';
+}

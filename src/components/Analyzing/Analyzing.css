@@ -1,0 +1,116 @@
+.Analyzing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	align-self: stretch;
+}
+
+.AnalyzingImages {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	position: relative;
+	transition: all 0.5s ease;
+}
+
+.AnalyzingArrowLeft {
+	height: 84px;
+}
+
+.analyzingImg {
+	height: 288px;
+}
+
+.AnalyzingText {
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+.analyzingImg {
+	animation: float 4s ease-in-out infinite;
+	pointer-events: none;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+.Analyzing {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+.AnalyzingImages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	position: relative;
+}
+
+.analyzingImg {
+	animation: float 4s ease-in-out infinite;
+	pointer-events: none;
+	z-index: 1;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.AnalyzingArrowLeft,
+.AnalyzingArrowRight {
+	position: relative;
+	height: 100%;
+	transition: all 0.7s ease;
+}
+
+.AnalyzingArrowLeft svg,
+.AnalyzingArrowRight svg {
+	cursor: pointer;
+	transition: stroke 0.5s ease, transform 0.4s ease;
+}
+
+.AnalyzingArrowLeft svg path,
+.AnalyzingArrowRight svg path {
+	stroke: #292a3f;
+	transition: stroke 0.5s ease, filter 0.5s ease;
+}
+
+.AnalyzingImages:hover .AnalyzingArrowLeft svg path {
+	stroke: #c44ae7;
+}
+.AnalyzingImages:hover .AnalyzingArrowRight svg path {
+	stroke: #e658ff;
+}
+
+.AnalyzingImages:hover .AnalyzingArrowLeft {
+	stroke: #c44ae7;
+	filter: drop-shadow(0 0 6px #c44ae7aa);
+}
+.AnalyzingImages:hover .AnalyzingArrowRight {
+	stroke: #e658ff;
+	filter: drop-shadow(0 0 8px #e658ffbb);
+}
